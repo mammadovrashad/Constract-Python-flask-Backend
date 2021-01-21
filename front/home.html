@@ -23,6 +23,7 @@
             <th scope="col">id</th>
             <th scope="col">username</th>
             <th scope="col">email</th>
+            <th scope="col">password</th>
             <th scope="col">delete</th>
             <th scope="col">update</th>
           </tr>
@@ -33,6 +34,7 @@
             <th scope="row">{{user.id}}</th>
             <td>{{user.username}}</td>
             <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
             <td><td style="width: 80px; height:40px;color:white;background:rgb(78, 55, 207); margin:3px"><a href="/delete/{{user.id}}" style="color: white" >delete</a></td></td>
             <th><th style="width: 80px; height:40px;color:white;background:rgb(78, 55, 207)"><a href="/update/{{user.id}}" style="color:white;">update</a></th></th>
           </tr>
