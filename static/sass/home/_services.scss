@@ -1,0 +1,166 @@
+@import '../variables';
+@import '../general';
+bod{
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;}
+
+#section2{
+    background: url(../img/8.jpg); 
+    @extend .background-img;
+    height:$height/1.65;
+}
+    .over-lay-section2{
+         position:absolute;
+         top:0;
+         left:0;
+         z-index:1;
+         height:$height/1.65;
+         background-size:cover ;
+         background-color: rgba(0,0,0,0.4);
+        }
+         .largeblock-section2{
+             position: relative;
+             z-index:2;}
+            .rightblock-section2{ 
+                @extend .full-center;
+            }
+                .menu-section2{
+                    margin:0px 17px;
+                        li{ 
+                            position:relative;
+                            font-size:$font-size/6;
+                            display:inline-block;
+                            color:$color-white;
+                            margin:0px $margin/6;
+                            padding:$padding/4;
+                            a{
+                            color:$color-white;
+                            }
+                            }}
+                .icon-section2{
+                    margin-top:$margin/-6;
+                }
+                    .search-icon-section2{
+                    margin-right:$margin/15;
+                    font-size: 15px;
+                    padding:$padding/4;
+                    color:$color-white;
+                    box-shadow:0px 0px 2px;
+                    }              
+                    .bag-icon-section2{
+                        font-size:$font-size/6;
+                        padding:$padding/4;
+                        margin-right:$margin/2;
+                        color:$color-white;
+                        box-shadow:0px 0px 2px;
+                    }
+ .logo-section2 img{
+    max-height:120px;
+    max-width:100%;
+    margin:0px $margin/2;
+    padding:$padding/4;
+    margin-top:-10px;
+ }
+.line-section2{
+     height:$height/120;
+     margin:0px auto;
+     background:$color-red; 
+     top:471px;
+     left:10%;
+     width:(1125px);
+    }
+ .letter-section2 h1 {
+     @extend .width-100;
+     color:$color-white;
+     @extend .height-100;
+     margin:0px;
+    //  font: weight 800;
+ }
+.letter-section2{
+    display: inline-block;
+    position: relative;
+     top:100px;
+     left:155px;
+     font-size:$font-size/4;
+     @extend .transition
+    }
+    .box-section2{
+        z-index:-1;
+        top:120px;
+        left:5px;
+        width: 365px;
+        height:$height/80;
+        padding:$padding/30;
+        background-color:$color-darkred;
+    }
+        .letter-section2 h1{
+            font-size:65px;
+            font-weight: 600;
+            margin-top: 63px;
+        }
+        .letter-section2 p {
+            color:rgba(211, 211, 211, 0.897);
+            @extend .width-100;
+            @extend .height-100;
+            font-weight:400px;
+            margin:$margin/6 0px;
+            padding:$padding/6 $padding/-6;
+            font-family:cursive;
+            }
+        .tags-section2{
+            width: 25%;
+            background: none;
+            position: relative;
+            top:30px;
+           }
+            .tags-section2 h5{
+            padding:$padding/3 0px;
+            top:-35px;
+            font-weight: 100;
+            a{
+                color:$color-white;
+            }
+        }
+
+        [class^="button"]{
+          outline: none;
+          }
+.up-logo-section2{
+    top: 0px;
+    left:180%;
+    display: inline-block;
+    width: 265px;
+    height: 360px;
+    transition: all  1.5s ease;
+    }
+    .up-logo-section2 img{
+        @extend .width-100;
+        @extend .height-100;
+    }
+    .up-page-section2{  
+        left: 0px;
+        top: 275px;
+        height:85px;
+        background-color: rgba($color:white, $alpha:0.8);
+    }
+.serviceul{
+    display:none;
+    position: absolute!important;
+    height: 49px;
+    background: white;
+    top: 59px;
+    width: 115px;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+        padding: 5px;
+        margin-left: -15px;
+        margin-top:10px;
+        a{
+        color:red;
+        z-index: 2;
+        font-size: 15px;
+        }}
+}
+    

@@ -1,0 +1,178 @@
+@import '../general';
+@import '../variables';
+@import 'aboutClass';
+#section1{
+    background: url(../img/1.jpg);
+    @extend .background-img;
+    width:100%;
+    height: 700px;
+}
+.over-lay-section1{
+    @extend .over-lay;
+
+}
+.largeblock-section1{
+    @extend .largeblock;
+}
+.rightblock-section1{
+    @extend .rightblock;
+}
+.menu-section1{
+    @extend .menu;
+    .li a{
+        font-size: 15px;
+    }
+    // &:hover{
+    //     background-color:  linear-gradient(to right,#ffff00 0%,#ff3399 100%)!important;
+    // }
+}
+.icon-section1{
+    @extend .icon;
+}
+.search-icon-section1{
+    @extend .search-icon;
+}
+.bag-icon-section1{
+    @extend .bag-icon;
+}
+.logo-section1{
+    @extend .logo;
+}
+.upletter-section1 h1{
+    @extend .upletter-section1H;
+}
+.row-section1{
+    transform: translateY(225px);
+    position: relative;
+}
+.upletter-section1{
+    display: inline-block;
+    transform: translateX(160px);
+}
+.upletter-section1 p{
+    @extend .upletter-section1P
+}
+.section1-line{
+ height: 18px;
+ width: 260px;
+ background:$color-darkred ;
+ position: relative;
+ top: -20px;
+ z-index: -1;
+}
+.section1col-4{
+    background:white;
+    height: 400px;
+    margin-top: 60px;
+}
+.section1col-4 p{
+    padding:13px 30px;
+    color:gray;
+    font-size: 18px;
+    font-family:-webkit-pictograph;
+    margin:5px;
+    padding-bottom:0px;
+}
+.all-p{
+    position: relative;
+    top: 250px;
+    overflow: hidden;
+    @extend .transition
+}
+.section1col-4 span{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-size: 70px;
+    color:$color-darkred;
+}
+.section1col-4 h3{
+    margin: 0px;
+    color: gray;
+    font-family: -webkit-pictograph;
+    margin-left: 35px;
+    font-size: 22px;
+    margin-top:-12px;
+    font-weight: 100;
+}
+.upline-section1{
+    position: absolute;
+    top: 210px;
+    width: 75%;
+    height: 10px;
+    background:$color-darkred;
+}
+.section1coll-4{
+    height: 400px;
+    margin-top: 60px;
+    overflow: hidden;
+    .medium-logo{
+        width: 1536px;
+        background: $color-white;
+        display:flex;
+        position: relative;
+        top:5px;
+        left:-3px;
+        .allup-logo{
+            width: 384px;
+        }
+    }
+    img{
+        height:400px;
+        // width: 384px;
+        width: 100%;
+    }
+    .about-btns{
+      display:flex;
+      position: absolute;;
+      top:532px;
+      left:400px;
+      z-index: 2;
+    }
+      .about-btn{
+        height: 85px;
+        width: 85px;
+        background:$color-white;
+        font-size:20px;
+        outline:none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background:$color-darkred;
+          i{
+          color:$color-white;}
+        }
+        }
+}
+.menu-section1 ul ul{
+    display:none;
+    position: absolute;
+    height: 50px;
+    background: white;
+    top: 59px;
+    width: 115px;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+    padding: 5px;
+    margin-left: -15px;
+    margin-top:10px;
+    &:hover{
+        background: none;
+    }
+    a{
+    color:red;
+    z-index: 2;
+    font-size: 15px;
+    }
+}}
+
+.menu-section1 ul {
+    position: relative;
+    margin: 0px;
+    margin-top: -10px;
+}
+    li{
+        margin-left:-10px; 
+}
+

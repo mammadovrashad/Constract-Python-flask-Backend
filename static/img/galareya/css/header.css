@@ -1,0 +1,269 @@
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.full-center, .rightblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hover:hover {
+  background: #ca0c0c;
+}
+
+.transition {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.full-center2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.width, .letter h1, h5, .letter p, .up-logo img {
+  width: 100%;
+}
+
+.height, .letter h1, h5, .letter p, .up-logo img, .button {
+  height: 100%;
+}
+
+#header {
+  background: url(../img/post_11-640x640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.over-lay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.largeblock {
+  position: relative;
+  z-index: 2;
+}
+
+.menu {
+  margin: 0px 17px;
+}
+
+ul {
+  margin: 0px;
+  margin-top: -10px;
+}
+
+li {
+  font-size: 13.33333px;
+  display: inline-block;
+  color: white;
+  margin: 0px 10px;
+  padding: 15px;
+}
+
+.icon {
+  margin-top: -10px;
+}
+
+.search-icon {
+  margin-right: 4px;
+  font-size: 15px;
+  padding: 15px;
+  color: white;
+  -webkit-box-shadow: 0px 0px 2px;
+          box-shadow: 0px 0px 2px;
+}
+
+.bag-icon {
+  font-size: 13.33333px;
+  padding: 15px;
+  margin-right: 30px;
+  color: white;
+  -webkit-box-shadow: 0px 0px 2px;
+          box-shadow: 0px 0px 2px;
+}
+
+.logo img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.line {
+  top: 790px;
+  left: 150px;
+  width: 1200px;
+  height: 10px;
+  margin: 0px auto;
+  background: red;
+}
+
+.letter h1, h5 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box {
+  z-index: -1;
+  top: 64px;
+  left: 378px;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.letter h5 {
+  font-size: 16px;
+  padding: 20px 0px;
+  font-weight: 100;
+}
+
+.up-logo {
+  top: 260px;
+  left: 158px;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+}
+
+.up-page {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence {
+  height: 90px;
+}
+
+.sentence h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #ca0c0c;
+}
+
+.right-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  top: 570px;
+  height: 85px;
+}
+
+.right-buttons button {
+  width: 85px;
+  background: white;
+  font-size: 20px;
+}
+
+.right-buttons button:hover {
+  background: #ca0c0c;
+}
+
+.right-buttons button:hover i {
+  color: white;
+}
+
+.right-buttons button i {
+  color: black;
+}
+
+.under-button {
+  z-index: 2;
+  top: 740px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.under-button button {
+  background: white;
+  width: 3px;
+  height: 5px;
+  margin: 10px;
+}
+/*# sourceMappingURL=header.css.map */

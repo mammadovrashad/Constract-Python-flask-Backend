@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.server {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 9px;
+          box-shadow: 0px 0px 9px;
+  max-height: 300px;
+  min-width: 300px;
+}
+
+[class^="button"] {
+  position: relative;
+  background: skyblue;
+  color: red;
+  border-radius: 15px;
+  margin: 5px;
+  outline: none;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.slider-item {
+  position: relative;
+  left: 0px;
+}
+/*# sourceMappingURL=text.css.map */

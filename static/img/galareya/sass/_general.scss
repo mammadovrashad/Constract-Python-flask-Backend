@@ -1,0 +1,216 @@
+body{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+}
+// qutunun her iki terefden merkeze getirilmesi space between formasinda
+.full-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.absolute{
+    position: absolute;
+}
+.hover {
+    &:hover{
+        background:#ca0c0c ;
+        transition: .5s ease-in-out;
+       
+    }}
+.hover2 {
+    &:hover{
+         background:#ca0c0c ;
+        }
+}
+.transition{
+    transition: all 0.6s ease;
+}
+.row-column-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.width-100{
+    width:100%;
+}
+.height-100{
+    height:100%;
+}
+.background-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    }
+    .col-1{
+        width:$colwidth/1;
+    }
+    .col-2{
+        width: $colwidth/2;
+    }
+    .col-3{
+        width: $colwidth/3;
+    }
+    .col-4{
+        width: $colwidth/4;
+    }
+    .col-5{
+        width: $colwidth/5;
+    }
+    .col-6{
+        width: $colwidth/6;
+    }
+    .col-7{
+        width: $colwidth/7;
+    }
+    .col-8{
+        width: $colwidth/8;
+    }
+    .col-9{
+        width: $colwidth/9;
+    }
+    .col-10{
+        width: $colwidth/10;
+    }.col-11{
+        width: $colwidth/11;
+    }
+    .col-12{
+        width: $colwidth/12;
+    }
+    
+.btn-overlay{
+        display: none;
+        height: 80px;
+        width: 80px;
+        background:$color-white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background:rgb(238, 13, 13);
+            color: white;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+.overlay-All{
+         position:absolute;
+         top:0;
+         left:0;
+         z-index:0;
+         height:$height/1.5;
+         background-size:cover ;
+         background-color: rgba(0,0,0,0.4);
+}
+.logoheader-img{
+    max-height:120px;
+    max-width:100%;
+    margin:0px $margin/2;
+    padding:$padding/4;
+    margin-top:-10px;
+}
+.letter-h1-h5{
+    @extend .width-100;
+     color:$color-white;
+     @extend .height-100;
+     margin:0px;
+     font-weight: 50px;
+}
+.letter-All{
+     top:320px;
+     left:500px;
+     font-size:$font-size/4;
+     @extend .transition
+}
+.box-All{
+        z-index:-1;
+        top: 33.5%;
+        left: 45.1%;
+        width: 223px;
+        height:$height/60;
+        padding:$padding/30;
+        background-color:$color-darkred;
+}
+.letter-h1-All{
+    font-size:$font-size;
+    font: weight 800;
+}
+.letter-p-All{
+            color:rgba(211, 211, 211, 0.897);
+            @extend .width-100;
+            @extend .height-100;
+            font-weight:400px;
+            margin:$margin/6 0px;
+            padding:$padding/6 $padding/-6;
+            font-family:cursive;
+}
+.tags-All{
+    width: 18%;
+    background: none;
+    position: relative;
+    padding: 6px;
+    top:30px;
+    left:0px;
+}
+.tags-h5-All{
+    padding:$padding/4 0px;
+            top:-35px;
+            left:0px;
+            font-weight: 100;
+            border-bottom:2px solid red;
+            a{
+                color:$color-white;
+                text-decoration:none;
+            }
+}
+.up-logo-header-All{
+    top: 260px;
+    left: 70px;
+    z-index: 1;
+    display: inline-block;
+    width: 265px;
+    height: 360px;
+    transition: all  1.5s ease;
+}
+.up-logo-header-img-All{
+    @extend .width-100;
+    @extend .height-100;
+}
+.up-page-All{
+    left: 0px;
+        top: 275px;
+        height:85px;
+        background-color: rgba($color:white, $alpha:0.8);
+}
+.sentence-All{
+    height: 90px;
+}
+.sentence-h4-All{
+    color:black;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+}
+.button-All{
+    background:$color-darkred;
+            color:$color-white;
+            width: 110px;
+            @extend .height-100;
+            cursor: pointer;
+            border:none;
+            font-size:20px;
+            &:hover{
+                background-color:$color-white;
+                color:$color-darkred;
+}}

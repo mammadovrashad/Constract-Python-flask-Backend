@@ -1,0 +1,250 @@
+@import '../variables';
+@import '../general';
+#apply-pages{
+    width: 100%;
+    height: 800px;
+    background: rgb(223, 223, 223);
+}
+.form-imgs{
+    position: relative;
+    width: 100%;
+    height:800px;
+    background: url(../img/14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.over-lay-pages{
+    position:absolute;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 800px;
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 60px;
+        margin-top: 65px;
+        font-family: sans-serif;
+        position: relative;
+        z-index: 1;
+}
+    }
+.line-pages{
+    width: 30%;
+    height: 20px;
+    background:$color-darkred;
+    position: absolute;
+    top: 22%;
+    left: 35%;
+}
+.up-icon{
+    display: flex;
+    width: 65%;
+    height: 305;
+    height: 235px;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+.rule-pen{
+    width: 45%;
+    height: 235px;
+    h1{
+        color: white;
+        font-size: 23px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    p{
+    color: lightgray;
+    font-size: 17px;
+    text-align: center;
+}
+i{
+    color: white;
+    font-size: 58px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+}
+.like-hand{
+    width: 45%;
+    height: 235px;
+    margin-left: 10%;
+    h1{
+        color: white;
+        font-size: 23px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    p{
+    color: lightgray;
+    font-size: 17px;
+    text-align: center;
+}
+    i{
+    color: white;
+    font-size: 58px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+}
+.under-icon{
+    display: flex;
+    width: 65%;
+    height: 305;
+    height: 235px;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+.cup-icon{
+    width: 45%;
+    height: 235px;
+    h1{
+        color: white;
+        font-size: 23px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    p{
+    color: lightgray;
+    font-size: 17px;
+    text-align: center;
+}
+    i{
+    color: white;
+    font-size: 58px;
+    margin-left: 10px;
+    margin-top: 10px;
+}}
+.lamp-icon{
+    width: 45%;
+    height: 235px;
+    margin-left: 10%;
+    h1{
+        color: white;
+        font-size: 23px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    p{
+    color: lightgray;
+    font-size: 17px;
+    text-align: center;
+}
+    i{
+    color: white;
+    font-size: 58px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+}
+.icon-div{
+    width: 90px;
+    height: 80px;
+    background:$color-darkred;
+    transform: translate( 60px);
+}
+.div-letter{
+    width: 106%;
+}
+.form{
+    width: 80%;
+    transform: translateY(40px);
+    height:760px;
+    background:white;
+    display: flex;
+    justify-content: center;
+    input{
+    margin-top: 20px;
+    height: 50px;
+    font-size: 16px;
+    outline: none;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+}
+.label-span{
+    color:gray;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+input[type="file"]{
+display: none;
+}
+.file{
+    width: 115px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:$color-darkred;
+    cursor: pointer;
+    display: flex;
+    margin-top: 10px;
+    transition: .3s ease;
+    &:hover{
+        transform: translateY(-10px);
+    }
+
+}
+.chosse{
+    color: white;
+}
+.flex-file{
+    display: flex;
+    align-items: center;
+}
+.no-file{
+    color:gray;
+    margin-left: 5px;
+    font-family: sans-serif;
+}
+input[type="submit"]{
+    display: none;
+}
+.submit-div{
+margin-top: 20px;
+display: flex;
+justify-content:center;
+align-items: center;
+width: 250px;
+background: $color-darkred;
+height: 50px;
+transition: .3s ease;
+cursor: pointer;
+&:hover{
+    transform: translateY(-10px);
+}
+}
+.submit-span{
+    color:white;
+}
+.refresh-button-page{
+    position: absolute;
+    z-index: 5;
+    height: 80px;
+    width: 80px;
+    right: 70px;
+    top: 80%;
+.refresh-page{
+    width: 100%;
+    height: 100%;
+    background:$color-darkred;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all  .5s ease;
+    margin-top: 10px;
+    text-align: center;
+    &:hover{background: white;
+        a{color:black}
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+}
+    }

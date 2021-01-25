@@ -1,0 +1,174 @@
+@import '../general';
+@import '../variables';
+@import 'aboutClass';
+#singleServices{
+    background: url(../img/10.jpg);
+    @extend .background-img;
+    width:100%;
+    height: 700px;
+}
+.over-lay-singleServices{
+    @extend .over-lay;
+
+}
+.largeblock-singleServices{
+    @extend .largeblock;
+}
+.rightblock-singleServices{
+    @extend .rightblock;
+}
+.menu-singleServices{
+    @extend .menu;
+}
+.icon-singleServices{
+    @extend .icon;
+}
+.search-icon-singleServices{
+    @extend .search-icon;
+}
+.bag-icon-singleServices{
+    @extend .bag-icon;
+}
+.logo-singleServices{
+    @extend .logo;
+}
+.upletter-singleServices h1{
+    @extend .upletter-section1H
+}
+.row-singleServices{
+    transform: translateY(225px);
+    position: relative;
+}
+.upletter-singleServices{
+    position: relative;
+    top:-130px;
+    left: 130px;
+    display: inline-block;
+    // transform: translateX(160px);
+}
+.upletter-singleServices p{
+    @extend .upletter-section1P
+}
+.singleServices-line{
+ height: 20px;
+ width: 345px;
+ background:$color-darkred ;
+ position: relative;
+ top: -95px;
+ z-index: -1;
+}
+.singleServicescol-4{
+    background:white;
+    height: 400px;
+    margin-top: 60px;
+}
+.singleServicescol-4 p{
+    padding:13px 30px;
+    color:gray;
+    font-size: 18px;
+    font-family:-webkit-pictograph;
+    margin:5px;
+    padding-bottom:0px;
+}
+.all-p{
+    position: relative;
+    top: 250px;
+    overflow: hidden;
+    @extend .transition
+}
+.singleServicescol-4 span{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-size: 70px;
+    color:$color-darkred;
+}
+.singleServicescol-4 h3{
+    margin: 0px;
+    color: gray;
+    font-family: -webkit-pictograph;
+    margin-left: 35px;
+    font-size: 22px;
+    margin-top:-12px;
+    font-weight: 100;
+}
+.upline-singleServices{
+    position: absolute;
+    top: 218px;
+    z-index: 5;
+    width: 1140px;
+    height: 10px;
+    background:$color-darkred;
+}
+.singleServicescoll-4{
+    background:white;
+    height: 400px;
+    margin-top: 60px;
+    overflow: hidden;
+    .medium-logo{
+        background: $color-white;
+        width: 1536px;
+        display:flex;
+        position: relative;
+        top:5px;
+        left:-3px;
+        .allup-logo{
+            width: 384px;
+        }
+    }
+    img{
+        height:400px;
+        width: 100%;
+    }
+    .singleServices-btns{
+      display:flex;
+      position: absolute;;
+      top:540px;
+      left:76.35%;
+      z-index: 2;
+    }
+      .singleServices-btn{
+        height: 85px;
+        width: 85px;
+        background:$color-white;
+        font-size:20px;
+        outline:none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background:$color-darkred;
+          i{
+          color:$color-white;}
+        }
+        }
+}
+.menu-singleServices ul ul{
+    display:none;
+    position: absolute;
+    height: 50px;
+    background: white;
+    top: 59px;
+    width: 115px;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+    padding: 5px;
+    margin-left: -15px;
+    margin-top:10px;
+    &:hover{
+        background: none;}
+    a{
+    color:red;
+    z-index: 2;
+    font-size: 15px;
+    }
+}}
+
+.menu-singleServices  ul {
+    position: relative;
+    margin: 0px;
+    margin-top: -10px;
+}
+    li{
+        margin-left:-10px; 
+}

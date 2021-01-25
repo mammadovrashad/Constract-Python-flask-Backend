@@ -1,0 +1,465 @@
+@import '../variables';
+@import '../general';
+body{
+    width: 100%;
+    min-height:100vh;
+    font-size: 18px;
+    font-family: poppins;
+}
+
+#slider{
+    min-width: 6080;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+#slider-countainer{
+    width: fit-content;
+    display: flex !important;
+    height: 800px;
+    position: relative;
+    z-index: -1;
+    left: 0px;
+    background-attachment: fixed;
+    transition: 0.1s width;
+}
+#slider1{
+    background: url(../img/home/2.jpg);
+    position: relative;
+    min-width:1520px;
+    height:800px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#slider2{
+    background: url(../img/home/18.jpg);
+    position: relative;
+    display: inline-block;
+    min-width: 1520px;
+    height:800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#slider3{
+    background: url(../img/home/19.jpg);
+    position: relative;
+    display: inline-block;
+    min-width: 1520px;
+    height:800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#slider4{
+    background: url(../img/home/20.jpg);
+    position:relative;
+    display: inline-block;
+    min-width:1520px;
+    height:800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.over-lay-header{
+         @extend .overlay-All
+        }
+.largeblock-header{
+    // background: none;
+    position: absolute;;
+    z-index:5;
+}
+  .rightblock-header{ 
+                @extend .full-center;
+            }
+                .menu-header{
+                    margin:0px 17px;
+                    width:100% ;}
+                    ul{
+                        position: relative;
+                        z-index: 10;
+                         margin:0px;
+                         list-style: none;
+                         margin-top:-$margin/6;}
+                        .li{
+                            position:relative;
+                            font-size:$font-size/6;
+                            display:inline-block;
+                            color:$color-white;
+                            margin:0px $margin/6;
+                            padding:$padding/4;
+                            a{
+                            color:$color-white;
+                            text-decoration:none;
+                            border-radius: 3px;
+                            font-size: 15px;
+                            }
+                            }
+                .icon-header{
+                    margin-top:$margin/-6;
+                }
+                    .search-icon-header{
+                    margin-right:$margin/15;
+                    font-size: 15px;
+                    padding:$padding/4;
+                    color:$color-white;
+                    box-shadow:0px 0px 2px;
+                    }              
+                    .bag-icon-header{
+                        font-size:$font-size/6;
+                        padding:$padding/4;
+                        margin-right:$margin/2;
+                        color:$color-white;
+                        box-shadow:0px 0px 2px;
+                    }
+                    .line{
+                        top:790px;
+                        left:150px;
+                        width:79%;
+                        height:$height/120;
+                        margin:0px auto;
+                        background:$color-red;
+                       }
+ .logo-header img{
+    @extend .logoheader-img
+ }
+ .letter h1,h5{
+     @extend .letter-h1-h5
+ }
+.letter{
+    @extend .letter-All
+}
+
+
+.box{
+    @extend .box-All
+}
+        .letter h1{
+            @extend .letter-h1-All
+        }
+        .letter p {
+            @extend .letter-p-All
+        }
+        .tags{
+            @extend .tags-All
+           }
+            .tags h5{
+            @extend .tags-h5-All
+        }
+
+        [class^="button"]{
+          outline: none;
+          }
+.up-logo-header{
+    @extend .up-logo-header-All
+    }
+    .up-logo-header img{
+       @extend .up-logo-header-img-All
+    }
+    .up-page{  
+      @extend .up-page-All
+    }
+    .sentence{
+       @extend .sentence-All
+    }
+    .sentence h4{
+       @extend .sentence-h4-All
+        }
+        .button{
+           @extend .button-All
+        }
+.right-buttons{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 715px;
+    width: 175px;
+    z-index:1;
+    height: 85px;
+    right: -5px;
+ }
+    .right-buttons button{
+        width:90px;
+        background:$color-white;
+        font-size:20px;
+        &:hover {
+          background:$color-darkred;
+          i{
+          color:$color-white;
+        }}
+    }
+    .right-buttons button i{
+        color: black;}
+.under-button {
+    z-index:4;
+    top:740px;
+    padding-left: 15px;
+    box-sizing: border-box;}
+.under-button button {
+    background:$color-white;
+    width:$width/400;
+    height:$height/240;
+    margin:$margin/6;
+}
+.menu-header ul ul{
+    display:none;
+    position: absolute;
+    height: 50px;
+    background: white;
+    top: 59px;
+    width: 115px;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 0px 5px lightgray;
+    li {
+    padding: 5px;
+    margin-left: -18px;
+    margin-top:10px;
+    a{
+    color:red;
+    z-index: 2;
+    font-size: 18px;
+    }
+}}
+
+.menu-header ul {
+    position: relative;
+    margin: 0px;
+    margin-top: -10px;
+}
+    li{
+        margin-left:-10px; 
+}
+#section{
+    width: 100%;
+    height:700px;
+    background: white;
+    .insection-block1{
+        height: 600px;
+        width: (80%);
+        margin-top:65px;
+        transform: translateX(25%);
+    }
+    .insection-block2{
+        height: 600px;
+        width:(82%);
+        margin-top:65px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    .insection-upblock{
+    display: inline-block;
+    background-color: rgba(250, 249, 249, 0.8);
+    width: 65%;
+    height: 70%;
+    transform: translate(-50% -50%);
+    transform: translate(25%, -120%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-family: auto;
+    color: blackgray;
+    color: darkslategrey;
+    img{ 
+    width: 28%;
+    height: 16%;
+    object-fit: cover;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    }
+    span{
+    position:absolute;
+    top:20%;
+    left:15%;
+    font-size: 70px;
+    color:$color-darkred;
+    }
+}
+}}
+.writing{
+    width: 80%;
+    height: 80%;
+    transform: translateY(30%);
+    h1{
+    font-size: 62px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    }
+    p{
+    color: gray;
+    margin: 0px;
+    font-family: cursive;
+    width: calc(100% + 90px);
+    font-size: 18px;
+    }
+    h4{
+    margin: 50px 0px;
+    font-weight: 200;
+    }
+}
+.view-services{
+    text-decoration: none;
+    color: black;
+    border-bottom:2px solid red;
+    margin-top:20px
+}
+#section-kollection{
+    background: white;
+    width: 100%;
+    height: 200px;
+    margin-top: 33px;
+    .galareya{
+    background:white;
+    width: 80%;
+    height: 150px;
+    transform: translateX(14%);
+    }
+}
+.over-lay-header2{
+    @extend .overlay-All
+   }
+.logo-header2 img{
+    @extend .logoheader-img
+ }
+ .letter2 h1,h5{
+     @extend .letter-h1-h5
+ }
+.letter2{
+    @extend .letter-All
+}
+.box2{
+    @extend .box-All
+}
+        .letter2 h1{
+            @extend .letter-h1-All
+        }
+        .letter2 p {
+            @extend .letter-p-All
+        }
+        .tags2{
+            @extend .tags-All
+           }
+            .tags2 h5{
+            @extend .tags-h5-All
+        }
+
+.up-logo-header2{
+    @extend .up-logo-header-All
+    }
+.up-logo-header2 img{
+       @extend .up-logo-header-img-All
+    }
+    .up-page2{  
+      @extend .up-page-All
+    }
+    .sentence2{
+       @extend .sentence-All
+    }
+    .sentence2 h4{
+       @extend .sentence-h4-All
+        }
+        .button2{
+           @extend .button-All
+        }
+
+
+.over-lay-header3{
+            @extend .overlay-All
+           }
+.logo-header3 img{
+            @extend .logoheader-img
+         }
+         .letter3 h1,h5{
+             @extend .letter-h1-h5
+         }
+        .letter3{
+            @extend .letter-All
+        }
+        .box3{
+            @extend .box-All
+        }
+                .letter3 h1{
+                    @extend .letter-h1-All
+                }
+                .letter3 p {
+                    @extend .letter-p-All
+                }
+                .tags3{
+                    @extend .tags-All
+                   }
+                    .tags3 h5{
+                    @extend .tags-h5-All
+                }
+        .up-logo-header3{
+            @extend .up-logo-header-All
+            }        
+.up-logo-header3 img{
+    @extend .up-logo-header-img-All
+}
+.up-page3{  
+    @extend .up-page-All
+}
+.sentence3{
+         @extend .sentence-All
+ }
+.sentence3 h4{
+     @extend .sentence-h4-All
+     }
+     .button3{
+       @extend .button-All
+     }
+
+
+
+.over-lay-header4{
+        @extend .overlay-All
+       }
+.logo-header4 img{
+        @extend .logoheader-img
+     }
+     .letter4 h1,h5{
+         @extend .letter-h1-h5
+     }
+    .letter4{
+        @extend .letter-All
+    }
+    .box4{
+        @extend .box-All
+    }
+            .letter4 h1{
+                @extend .letter-h1-All
+            }
+            .letter4 p {
+                @extend .letter-p-All
+            }
+            .tags4{
+                @extend .tags-All
+               }
+                .tags4 h5{
+                @extend .tags-h5-All
+            }
+    .up-logo-header4{
+        @extend .up-logo-header-All
+        }        
+.up-logo-header4 img{
+@extend .up-logo-header-img-All
+}
+.up-page4{  
+@extend .up-page-All
+}
+.sentence4{
+     @extend .sentence-All
+}
+.sentence4 h4{
+ @extend .sentence-h4-All
+ }
+ .button4{
+   @extend .button-All
+ }
