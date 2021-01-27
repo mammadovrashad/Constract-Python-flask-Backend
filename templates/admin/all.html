@@ -1,0 +1,34 @@
+{% extends "admin/layout.html" %}
+{% block pageadmin %}
+<table class="table table-bordered" style="margin:auto;background:white;width: 80%;transform: translate(10%, 10px);">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">aboutBox1</th>
+        <th scope="col">aboutBox2</th>
+        <th scope="col">aboutBox3</th>
+        <th scope="col">aboutBox4</th>
+        <th scope="col">aboutBox5</th>
+        <th scope="col">aboutBox6</th>
+        <th scope="col">delete</th>
+        <th scope="col">update</th>
+      </tr>
+    </thead>
+    <tbody>
+     {% for post in postList %}
+     <tr>
+        <th scope="row">{{post.id}}</th>
+        <td>{{post.warningBox1}}</td>
+        <td>{{post.warningBox2}}</td>
+        <td>{{post.warningBox3}}</td>
+        <td>{{post.warningBox4}}</td>
+        <td>{{post.warningBox5}}</td>
+        <td>{{post.warningBox6}}</td>
+        <td style="text-align: center;"><a href="/about/delete/{{post.id}}"><i class="fas fa-trash-alt" style="color: orange;"></i></a>
+        </td>
+        <td style="text-align: center;"><a href="/about/update/{{post.id}}"><i class="fas fa-edit" style="color: orange;"></i></a></td>
+      </tr>
+     {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

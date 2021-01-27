@@ -15,24 +15,24 @@ section1c4Div.style.height=400+'px';}
 
 let aboutbtnLeft=document.querySelectorAll('.singleServices-btn')[0]
 aboutbtnLeft.addEventListener('click',Run1)
-a=-3;
-b=-384;
+a=2;
+b=-421;
 let allup_logo=document.querySelector('.medium-logo');
 function Run1(){
-    if(a<-3){
+    if(a<2){
         a=a-b;
         allup_logo.style.left=a+'px';}
         else{
-            a=a+(b*3)
+            a=a+(b*2)
         }
         allup_logo.style.left=a+'px'; 
 }
 let aboutbtnRight=document.querySelectorAll('.singleServices-btn')[1];
 let interval=setInterval(Run2,3000)
-a=-3;
-b=-384;
+a=2;
+b=-421;
 function Run2(){
-    if(a>= -771){
+    if(a>= -840){
     a=a+b;
     allup_logo.style.left=a+'px';
 function stop(){

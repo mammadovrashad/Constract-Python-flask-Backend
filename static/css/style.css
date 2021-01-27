@@ -1161,13 +1161,14 @@ li {
 }
 
 .name-master {
-  font-size: 30px;
-  margin-left: 30px;
+  font-size: 24px;
+  margin-left: 15%;
+  margin-top: auto;
 }
 
 .profession {
   font-size: smaller;
-  margin-left: 30px;
+  margin-left: 30%;
   color: #9b9797;
 }
 
@@ -1990,6 +1991,7 @@ body {
   background: white;
   height: 400px;
   margin-top: 60px;
+  overflow: overlay;
 }
 
 .section1col-4 p {
@@ -2036,23 +2038,25 @@ body {
 
 .section1coll-4 {
   height: 400px;
+  width: 100%;
   margin-top: 60px;
   overflow: hidden;
+  position: relative;
 }
 
 .section1coll-4 .medium-logo {
-  width: 1536px;
+  width: 1680px;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   top: 5px;
-  left: -3px;
+  left: 2px;
 }
 
 .section1coll-4 .medium-logo .allup-logo {
-  width: 384px;
+  width: 420px;
 }
 
 .section1coll-4 img {
@@ -2065,8 +2069,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 532px;
-  left: 400px;
+  top: 79%;
+  left: 210px;
   z-index: 2;
 }
 
@@ -3269,6 +3273,7 @@ body {
   background: white;
   height: 400px;
   margin-top: 60px;
+  overflow: overlay;
 }
 
 .singleServicescol-4 p {
@@ -3322,17 +3327,17 @@ body {
 
 .singleServicescoll-4 .medium-logo {
   background: white;
-  width: 1536px;
+  width: 1680px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   top: 5px;
-  left: -3px;
+  left: 2px;
 }
 
 .singleServicescoll-4 .medium-logo .allup-logo {
-  width: 384px;
+  width: 420px;
 }
 
 .singleServicescoll-4 img {

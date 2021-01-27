@@ -339,7 +339,7 @@ plusBtn2.addEventListener('click',function(){
     frontDiv.className='front-img'
     overlayDiv.appendChild(frontDiv)
     let frontImg=document.createElement('img')
-    frontImg.setAttribute('src',imgs[0])
+    frontImg.setAttribute('src',imgs[1])
     frontDiv.appendChild(frontImg)
     document.querySelector('.up-btn-overlay').style.display='block'
   })
@@ -351,7 +351,7 @@ plusBtn2.addEventListener('click',function(){
     frontDiv.className='front-img'
     overlayDiv.appendChild(frontDiv)
     let frontImg=document.createElement('img')
-    frontImg.setAttribute('src',imgs[0])
+    frontImg.setAttribute('src',imgs[2])
     frontDiv.appendChild(frontImg)
     document.querySelector('.up-btn-overlay').style.display='block'
   })
@@ -363,7 +363,7 @@ plusBtn2.addEventListener('click',function(){
     frontDiv.className='front-img'
     overlayDiv.appendChild(frontDiv)
     let frontImg=document.createElement('img')
-    frontImg.setAttribute('src',imgs[0])
+    frontImg.setAttribute('src',imgs[3])
     frontDiv.appendChild(frontImg)
     document.querySelector('.up-btn-overlay').style.display='block'
   })
@@ -375,7 +375,7 @@ plusBtn2.addEventListener('click',function(){
     frontDiv.className='front-img'
     overlayDiv.appendChild(frontDiv)
     let frontImg=document.createElement('img')
-    frontImg.setAttribute('src',imgs[0])
+    frontImg.setAttribute('src',imgs[4])
     frontDiv.appendChild(frontImg)
     document.querySelector('.up-btn-overlay').style.display='block'
   })
@@ -387,7 +387,7 @@ plusBtn2.addEventListener('click',function(){
     frontDiv.className='front-img'
     overlayDiv.appendChild(frontDiv)
     let frontImg=document.createElement('img')
-    frontImg.setAttribute('src',imgs[0])
+    frontImg.setAttribute('src',imgs[5])
     frontDiv.appendChild(frontImg)
     document.querySelector('.up-btn-overlay').style.display='block'
   })

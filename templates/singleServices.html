@@ -29,18 +29,22 @@
                         <div class="singleServicescol-4">
                             <div class="all-p">
                                 <span>"</span>
-                            <h3>A mission becomes your constitution, the solid expression of your vision and values.</h3>
-                            <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
-                            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+                                {% for post in postList %}
+                                <p>{{post.writingBox1}}</p>
+                                <p>{{post.writingBox2}}</p>
+                                <p>{{post.writingBox3}}</p>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="section1col-4">              
                             <div class="all-p">
-                             <p>Objectively integrate enterprise-wide strategic theme areas with functionalized infrastructures. Interactively productize premium technologies whereas interdependent quality vectors. Rapaciously utilize enterprise experiences via 24/7 markets.</p>
-                             <p>Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services.</p>
-                             <p>Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.</p>
+                                {% for post in postList %}
+                                <p>{{post.writingBox4}}</p>
+                                <p>{{post.writingBox5}}</p>
+                                <p>{{post.writingBox6}}</p>
+                                {% endfor %}
                             </div>
                          </div> 
                     </div>
