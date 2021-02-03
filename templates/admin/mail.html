@@ -1,0 +1,30 @@
+{% extends "admin/layout.html" %}
+{% block pageadmin %}
+<div class="registration" style="width: 80%; margin:2% 18%;background:#eae4b1; height:40px; display:flex; justify-content:center;font: size 400;"><h2 style="font-weight: 400;">This is  Registration</h2></div>
+<table class="table" style="    width: 80%;background: white; margin: 2% 18%;">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">User Name</th>
+        <th scope="col">User Email</th>
+        <th scope="col">User Number</th>
+        <th scope="col">User Profession</th>
+        <th scope="col">User Message</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for user in userList %}
+    <tr>
+        <th scope="row">{{user.id}}</th>
+        <td>{{user.yourName}}</td>
+        <td>{{user.yourEmailAddress}}</td>
+        <td>{{user.contactPhone}}</td>
+        <td>{{user.yourProfession}}</td>
+        <td>{{user.request}}</td>
+        <td><a href="/mail/delete/{{user.id}}"><i class="fas fa-trash-alt" style="color: orange;"></i></a></tr>
+     {% endfor %}
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-outline-success" style=" position: absolute;left: 93%;" ><a href="/mail/deleteAll/users">Delete All</a></button>
+{% endblock %}

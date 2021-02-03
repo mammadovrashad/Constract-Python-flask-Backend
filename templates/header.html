@@ -32,7 +32,7 @@
                                     </li>
                                 </ul>
                         </li>
-                        <li class="li hover transition"><a href="/pages"class="four"><i class="fa fa-edit"style="margin-right:4px;"></i>Pages</a></li>
+                        <li class="li hover transition"><a href="/contact"class="four"><i class="fas fa-phone-alt"style="margin-right:4px;"></i>Contact</a></li>
                         <li class="li hover transition"><a href="/portfolio"class="five"><i class="fas fa-folder"style="margin-right:4px;"></i>Portfolio</a></li>
                         <li class="li hover transition"><a href="/news"class="six"><i class="fas fa-newspaper"style="margin-right:4px;"></i>News</a></li>
                         <li class="li hover transition"><a href="/shoup"class="seven"><i class="fas fa-shopping-cart"style="margin-right:4px;"></i>Shop</a></li>
@@ -59,7 +59,7 @@
                      approaches to corporate strategy foster collaborative thinking to future the overall value<br>
                      proposition.Organically grow the hlistic world view.
                   </p>
-              <div class="tags"><span class="h5 absolute"><a class="more-about" href="about.html" style="cursor: pointer;">More about Konstrakt</a>
+              <div class="tags"><span class="h5 absolute"><a class="more-about" href="/about" style="cursor: pointer;">More about Konstrakt</a>
                 <div class="hover-red" style="width: 140px;"></div>
               </span></div>
               </div>
@@ -79,7 +79,7 @@
                     <h1>Deliver excellence</h1>
                     <p>Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate<br>standardized metrics after resource-leveling processes. Objectively pursue diverse catalysts for<br>change for interoperable meta-services.
                     </p>
-                <div class="tags2" style="width: 20.7%;"><span class="h5 absolute"><a class="more-about" href="about.html" style="cursor: pointer;">View Konstrakt solutions</a>
+                <div class="tags2" style="width: 20.7%;"><span class="h5 absolute"><a class="more-about" href="/about" style="cursor: pointer;">View Konstrakt solutions</a>
                     <div class="hover-red" style="width: 156px;"></div>
                 </span></div>
                 </div>
@@ -99,7 +99,7 @@
                     <h1>Build it right</h1>
                     <p>Podcasting operational change management inside of workflows to establish a framework. Taking<br>seamless key performance indicators offline to maximise the long tail. Keeping your eye on the<br>ball while performing a deep dive.
                     </p>
-                <div class="tags3" style="width: 13.2%;"><span class="h5 absolute"><a class="more-about" href="about.html" style="cursor: pointer;">View our service</a></span>
+                <div class="tags3" style="width: 13.2%;"><span class="h5 absolute"><a class="more-about" href="/about" style="cursor: pointer;">View our service</a></span>
                     <div class="hover-red" style="width: 100px;"></div>
                 </div>
                 </div>
@@ -327,16 +327,16 @@
         </div>
         <div class="row"> 
         <div class="col-4" style="margin-right:20px;">
-            <div class="master-block">
-                <a href="/">
-                    <img src="../static/img/28.jpg" alt="">
-                <div class="name-block">
-                    <span class="name-master">Peter Wright</span>
-                    <span class="profession">Founder & CEO</span>
-                </div>
-                <button class="master-button"><i class="fas fa-chevron-right"></i></button>
-                </a>
+           <div class="master-block">
+            <a href="/">
+            <img src="../static/img/28.jpg" alt="">
+            <div class="name-block">
+                <span class="name-master">Peter Wright</span>
+                <span class="profession">Founder & CEO</span>
             </div>
+            <button class="master-button"><i class="fas fa-chevron-right"></i></button>
+            </a>
+        </div>
         </div>
         <div class="col-4" style="margin-right:20px;" >
             <div class="master-block">
@@ -374,7 +374,7 @@
             <div class="apply">
                 <div class="apply-letter">
                 <h1>Your future job in<br>construction awaits<br>you right here</h1>
-                <span class="apply-span"><a href="/pages">Apply now</a>
+                <span class="apply-span"><a href="/contact">Apply now</a>
                     <div class="hover-red"></div>
                 </span>
             </div>
@@ -395,19 +395,19 @@
                  </div>
                  <div class="get-in-touch-line"></div>
                  <div class="form-home">
-                    <form action="#">
-                        <input required type="text" placeholder="Your name">
+                    <form action="/registration" method='POST'>
+                        <input required type="text" placeholder="Your name" name="name" required>
                         <label for="email-home"></label>
-                        <input required type="email" id="email-home" placeholder="Your Email Address"><br>
-                        <input required type="tel" placeholder="Contact phone">
+                        <input required type="email" id="email-home" placeholder="Your Email Address" name="email" required><br>
+                        <input required type="tel" placeholder="Contact phone" name="contact" required>
                         <label for="select"></label>
-                        <select name="" id="">Project Scope<br>
-                            <option value="">Project Scope</option><br>
-                            <option value="">Business</option><br>
-                            <option value="">Residential</option><br>
-                            <option value="">Reconstruction</option>
+                        <select name="profession" id="select" required>Project Scope<br>
+                            <option value=">Project Scope">Project Scope</option><br>
+                            <option value="Business">Business</option><br>
+                            <option value="Residential">Residential</option><br>
+                            <option value="Reconstruction">Reconstruction</option>
                         </select><br>
-                        <textarea cols="50" rows="5"  placeholder="Describe your request" style="font-size:16px;font-family: sans-serif;background: none;  padding:15px;margin-top:25px;border:1px solid gray;outline:none;"></textarea><br>
+                        <textarea cols="50" rows="5" name="request" placeholder="Describe your request" style="font-size:16px;font-family: sans-serif;background: none;  padding:15px;margin-top:25px;border:1px solid gray;outline:none;"></textarea><br>
                         <label for="submit">
                             <div class="submit-div" style="width: 220px;"><span class="submit-span">Submit your request</span></div>
                             <input type="submit" id="submit">

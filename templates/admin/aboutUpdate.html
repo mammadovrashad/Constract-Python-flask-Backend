@@ -1,16 +1,16 @@
 {% extends "admin/layout.html" %}
 {% block pageadmin %}
 <form style="margin: auto; width:1000px" action="/about/update/{{post.id}}" method="POST">
-    <div class="form-group" style="background-color: white; width:100%;color:blue">Sirket haqqinda melumati daxil edin: Block 2<br>
-        <textarea name="aboutbox1" id="" cols="150" rows="5" style="background-color: yellow; width:100%;margin: 0px -2px;" placeholder="Esas hhisse ucun:" value="{{post.writingBox1}}"></textarea>
-        <textarea name="aboutbox2" id="" cols="150" rows="5" style="background-color: yellow; width:100%;margin: 0px -2px;" placeholder="diger hisse:" value="{{post.writingBox2}}"></textarea>
-        <textarea name="aboutbox3" id="" cols="150" rows="5" style="background-color: yellow; width:100%;margin: 0px -2px;" placeholder="diger hisse:" value="{{post.writingBox3}}" ></textarea>
+    <div class="form-group" style="height: 250px;background-color: white; width:100%;color:blue">Sirket haqqinda melumati daxil edin: Block 2<br>
+        <input class="form-control" type="text" placeholder="Add aboutBox1"  name="aboutbox1"  value="{{post.writingBox1}}" style="height: 80px; background:rgb(230, 244, 248)">
+        <input class="form-control" type="text" placeholder="Add aboutBox2"  name="aboutbox2"  value="{{post.writingBox2}}"  style="height: 80px;background:rgb(230, 244, 248)">
+        <input class="form-control" type="text" placeholder="Add aboutBox3"  name="aboutbox3"  value="{{post.writingBox3}}"  style="height: 80px;background:rgb(230, 244, 248)">
     </div><br>
-    <div class="form-group" style="background-color: white; width:100%;color:blue" >Sirket haqqinda melumati daxil edin: Block 3<br>
-        <textarea name="aboutbox4" id="" cols="150" rows="5" style="background-color: yellow; width:100%;margin: 0px -2px;" placeholder="diger hisse :" value="{{post.writingBox4}}"></textarea>
-        <textarea name="aboutbox5" id="" cols="150" rows="5" style="background-color: yellow; width:100%;margin: 0px -2px;" placeholder="diger hisse:" value="{{post.writingBox5}}"></textarea>
-        <textarea name="aboutbox6" id="" cols="150" rows="5" style="background-color: yellow; width:100%;margin: 0px -2px;"  placeholder="diger hisse:" value="{{post.writingBox6}}"></textarea>
+    <div class="form-group" style="height: 250px;background-color: white; width:100%;color:blue" >Sirket haqqinda melumati daxil edin: Block 3<br>
+        <input class="form-control" type="text" placeholder="Add aboutBox4"  name="aboutbox4"  value="{{post.writingBox4}}"  style="height: 80px;background:rgb(230, 244, 248)">
+        <input class="form-control" type="text" placeholder="Add aboutBox5"  name="aboutbox5"  value="{{post.writingBox5}}"  style="height: 80px;background:rgb(230, 244, 248)">
+        <input class="form-control" type="text" placeholder="Add aboutBox6"  name="aboutbox6"  value="{{post.writingBox6}}"  style="height: 80px;background:rgb(230, 244, 248)"> 
     </div>   
-    <button type="submit" class="btn btn-primary" style="background-color: red; outline:none;border:none;height:40px;width:80px;">Add Post</button>
+    <button type="submit" class="btn btn-primary" style="margin-top:14px;background-color: red; outline:none;border:none;height:40px;width:120px;">Add Post</button>
   </form>
 {% endblock pageadmin %}

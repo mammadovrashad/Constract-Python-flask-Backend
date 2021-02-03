@@ -1218,12 +1218,12 @@ li {
 }
 
 .get-in-touch-line {
-  width: 26.5%;
+  width: 25.5%;
   height: 20px;
   background: #e91b1b;
   position: absolute;
   top: 7%;
-  left: 40%;
+  left: 247px;
   z-index: -1;
 }
 
