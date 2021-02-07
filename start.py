@@ -7,13 +7,14 @@ from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database/data.db"
+app.config['UPLOAD_PATH']='static/upload'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
 
-registration=[]
+
 # modellerin yazilmasi
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -30,10 +31,23 @@ class User(db.Model):
     contactPhone=db.Column(db.Integer,nullable='False')
     yourProfession=db.Column(db.String,nullable='False')
     request=db.Column(db.Text,nullable='False')
+    
+class Master(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    masterName=db.Column(db.String(50),nullable='False')
+    masterProfession=db.Column(db.String,nullable='False')
+    masterAbout=db.Column(db.String,nullable='False')
+    masterImg=db.Column(db.String,nullable='False')
 
-
-
-
+class Contact(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    yourName=db.Column(db.String(50),nullable='False')
+    yourAddress=db.Column(db.String(255),nullable='False')
+    City=db.Column(db.Integer,nullable='False')
+    postCode=db.Column(db.String,nullable='False')
+    message=db.Column(db.Text,nullable='False')
+    phoneNumber=db.Column(db.String,nullable='False')
+    yourEmail=db.Column(db.String,nullable='False')
 
 titleHeader='header'
 titleAbout='about'
@@ -45,7 +59,8 @@ titlePortfolio='portfolio'
 # header sehifesinin yazilmasi
 @app.route("/")
 def header():
-    return render_template('header.html',title1=titleHeader)
+    masters=Master.query.all()
+    return render_template('header.html',title1=titleHeader,masterList=masters)
 
 # about sehifenin yazilmasi
 @app.route("/about")
@@ -90,7 +105,8 @@ def aboutAdd():
         writingBox6=request.form['aboutbox6'])
         db.session.add(post)
         db.session.commit()
-        redirect("/all")
+        print(" Məlumat ugurla yuklendi") 
+        return redirect("/about/add")
     return render_template('admin/aboutAdd.html')
 
 # admin hissede all routunun yazilmasi
@@ -98,7 +114,8 @@ def aboutAdd():
 def All():
     posts=Post.query.all()
     users=User.query.all()
-    return render_template('admin/all.html',postList=posts,userList=users)
+    masters=Master.query.all()
+    return render_template('admin/all.html',postList=posts,userList=users,masterList=masters)
 @app.route("/about/delete/<int:id>")
 def aboutDelete(id):
     postId=Post.query.get(id)
@@ -134,9 +151,9 @@ def Resgistration():
         yourProfession=request.form["profession"], request=request.form["request"])
         db.session.add(user)
         db.session.commit()
-        return redirect("/mail")
+        return redirect("/")
     return render_template('header.html')
-
+# mail rutunun yazilmasi 
 @app.route("/mail")
 def Mail():
     users=User.query.all()
@@ -153,6 +170,29 @@ def deleteMail(id):
     db.session.delete(userId)
     db.session.commit()
     return redirect("/mail")
+
+# master rutunun yazilmasi
+@app.route("/header/master",methods=["POST","GET"])
+def MasterAdd():
+    if request.method=='POST':
+        f = request.files['masterimg']
+        filePath=f"{app.config['UPLOAD_PATH']}/{f.filename}"
+        f.save(os.path.join(app.config['UPLOAD_PATH'],f.filename))
+        master=Master(
+        masterName=request.form['mastername'],
+        masterProfession=request.form['profession'],
+        masterAbout=request.form['masterabout'],
+        masterImg=filePath)
+        db.session.add(master)
+        db.session.commit()
+        return redirect("/header/master")
+    return render_template("admin/master.html")
+@app.route("/master/delete/<int:id>")
+def masterDelete(id):
+    masterId=Master.query.get(id)
+    db.session.delete(masterId)
+    db.session.commit()
+    return redirect("/all")
 if __name__=='__main__':
     app.run(debug=True)
     manager.run()

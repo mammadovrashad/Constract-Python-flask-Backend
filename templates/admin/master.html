@@ -1,0 +1,21 @@
+{% extends "admin/layout.html" %}
+
+{% block pageadmin %}
+<form  action="/header/master" style="margin: 2% 30%; width:50%; background: cadetblue;height:430px;" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="formGroupExampleInput" style="margin-bottom:2%;margin-top:1%">Master Name :</label>
+        <input type="text" class="form-control" style="margin-bottom:1%;" id="formGroupExampleInput" placeholder="Master Name" name="mastername">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2" style="margin-bottom:2%;margin-top:1%">Profession :</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Profession" name="profession"><br>
+      </div>
+      <div class="form-group"> Master About :<br>
+       <textarea name="masterabout" id="" cols="103" rows="5" placeholder="About" style="transform: translateX(2px);" ></textarea>
+    <div class="form-group">
+      <label for="exampleFormControlFile1" style="margin-bottom:2%;margin-top:2%"></label>
+      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="masterimg">
+    </div>
+    <button type="submit" class="btn btn-primary" style="margin-top:24px;background-color: rgb(0, 0, 162); outline:none;border:none;height:40px;width:120px;">Add Post</button>
+  </form>
+{% endblock %}
